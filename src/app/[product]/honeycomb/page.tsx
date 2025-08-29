@@ -109,7 +109,7 @@ export default function Honeycomb() {
           <div>
             <ul className="flex gap-[16px] mb-[230px] ">
               <li className="flex flex-col gap-[94px] pb-[58px]  border-b border-[#707070]">
-                <Image src="/images/img_smart_01.png" alt="iot" width={537} height={443} />
+                <Image src="/images/img_system_1.png" alt="iot" width={537} height={443} />
                 <div className="flex flex-col">
                   <span className="text-[31px] font-light text-[#919191]">01</span>
                   <strong className="text-[26px] font-bold">IOT 홈 연동</strong>
@@ -122,7 +122,7 @@ export default function Honeycomb() {
                 </p>
               </li>
               <li className="flex flex-col gap-[94px] pb-[58px]  border-b border-[#707070]">
-                <Image src="/images/img_smart_01.png" alt="remote" width={537} height={443} />
+                <Image src="/images/img_system_2.png" alt="remote" width={537} height={443} />
                 <div className="flex flex-col">
                   <span className="text-[31px] font-light text-[#919191]">02</span>
                   <strong className="text-[26px] font-bold">리모콘 원격제어 및 스마트 폰 앱 연동</strong>
@@ -136,7 +136,7 @@ export default function Honeycomb() {
                 </p>
               </li>
               <li className="flex flex-col gap-[94px] pb-[58px]  border-b border-[#707070]">
-                <Image src="/images/img_smart_01.png" alt="timer" width={537} height={443} />
+                <Image src="/images/img_system_3.png" alt="timer" width={537} height={443} />
                 <div className="flex flex-col">
                   <span className="text-[31px] font-light text-[#919191]">03</span>
                   <strong className="text-[26px] font-bold">자동 타이머 기능</strong>
