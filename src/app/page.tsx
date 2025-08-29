@@ -1,103 +1,94 @@
-import Image from "next/image";
+import Footer from "@/components/Footer"
+import Header from "@/components/Header"
+import Image from "next/image"
+import Link from "next/link"
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+    <div className="flex flex-col">
+      <Header />
+      <main className="flex flex-col items-center w-full px-[50px] min-w-[1024px]">
+        <section className="flex">
+          <Image src="/images/img_main_header.png" alt="line" width={1905} height={1270} />
+        </section>
+        <section className="flex flex-col items-center mt-[110px]">
+          <p className="flex justify-center items-center w-[446px] h-[43px] border border-black rounded-full text-[26px] avenir-black">
+            PREMIUM BLIND AURALUX
+          </p>
+          <h2 className="flex text-[60px] avenir-light mt-[43px] justify-center text-center whitespace-pre">{`THE COMPLETAION OF SPACE,\nTHE HARMONY OF LIFE`}</h2>
+        </section>
+        <section className="flex flex-col items-center mt-[110px] gap-[36px] mb-[230px]">
+          <h3 className="text-[36px] font-bold">AURALUX PRODUCT</h3>
+          <div className="flex flex-col items-center">
+            <ul className="flex gap-[11px] product-list">
+              <li className="flex flex-col items-center gap-[18px]">
+                <Image src="/images/img_honeycomb.png" alt="honeycomb" width={687} height={455} />
+                <Link
+                  href="/product/honeycomb"
+                  className="flex justify-center items-center border border-black w-full rounded-full h-[44px] hover:bg-[#000] hover:text-white cursor-pointer"
+                >
+                  <span className="text-[21px] font-[200]">
+                    <span className="text-[21px] font-bold">허니콤 블라인드</span> HONEYCOMB BLIND
+                  </span>
+                </Link>
+              </li>
+              <li className="flex flex-col items-center gap-[18px]">
+                <Image src="/images/img_comb.png" alt="comb" width={687} height={455} />
+                <Link
+                  href="/product/combi"
+                  className="flex justify-center items-center border border-black w-full rounded-full h-[44px] hover:bg-[#000] hover:text-white cursor-pointer"
+                >
+                  <span className="text-[21px] font-extralight">
+                    <span className="text-[21px] font-bold">콤비 블라인드</span> COMBI BLIND
+                  </span>
+                </Link>
+              </li>
+              <li className="flex flex-col items-center gap-[18px]">
+                <Image src="/images/img_wood.png" alt="wood" width={687} height={455} />
+                <Link
+                  href="/product/wood"
+                  className="flex justify-center items-center border border-black w-full rounded-full  h-[44px] hover:bg-[#000] hover:text-white cursor-pointer"
+                >
+                  <span className="text-[21px] font-extralight ">
+                    <span className="text-[21px] font-bold">우드 블라인드</span> WOOD BLIND
+                  </span>
+                </Link>
+              </li>
+              <li className="flex flex-col items-center gap-[18px]">
+                <Image src="/images/img_screen.png" alt="screen" width={687} height={455} />
+                <Link
+                  href="/product/screen"
+                  className="flex justify-center items-center border border-black w-full rounded-full h-[44px] hover:bg-[#000] hover:text-white cursor-pointer"
+                >
+                  <span className="text-[21px] font-[200] tracking-tighter">
+                    <span className="font-bold">롤스크린/썬스크린</span> ROLLER & SUN SCREENS
+                  </span>
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section className="flex items-center w-full gap-[70px] mb-[230px] section-3">
+          <div className="flex flex-col items-center border border-[#b4b4b4] rounded-[20px] ">
+            <Image src="/images/img_section_3.png" alt="product" width={743} height={496} />
+          </div>
+          <div className="flex flex-col pt-[30px] pb-[40px] gap-[75px] border-t-2 border-b-2 border-[#888] section-3-info">
+            <strong className="text-[32px] font-bold">공간의 완성, 삶의 조화</strong>
+            <div className="whitespace-pre-wrap text-[23px]">
+              <span>{`Auralux는 고품질 디자인과 기능성을 완비하여 인테리어 감성을\n완성하는프리미엄 블라인드 브랜드입니다.\n`}</span>
+              <strong className="text-[23px] text-bold">{`"공간에 빛의 아우라를 입히는 브랜드"`}</strong>로<br />
+              최첨단 기술과 세련된 디자인을 접목해 새로운 공간 경험을 제시합니다.
+            </div>
+            <Link
+              href="/about"
+              className="flex justify-center items-center w-[233px] h-[44px] border border-[#707070] text-[21px] font-bold rounded-[30px] tracking-normal hover:bg-[#000] hover:text-white cursor-pointer"
+            >
+              브랜드 소개 바로가기
+            </Link>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      <Footer />
     </div>
-  );
+  )
 }
