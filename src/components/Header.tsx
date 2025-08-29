@@ -44,7 +44,7 @@ const Header = () => {
             {isProduct && (
               <div
                 ref={optionRef}
-                className="flex flex-col justify-center items-center absolute top-[82px] w-[195px] h-[190px] bg-white border border-[#707070]"
+                className="flex flex-col justify-center items-center absolute top-[82px] translate-x-[-25%] w-[195px] h-[190px] bg-white border border-[#707070]"
               >
                 <Link href="/product/honeycomb" className="text-[#7d7d7d] text-[19px] hover:text-[#3b3b3b]">
                   허니콤 블라인드
