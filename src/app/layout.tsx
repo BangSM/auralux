@@ -21,19 +21,19 @@ export default function RootLayout({
   return (
     <>
       <head>
-        <meta name="viewport" content="width=1024, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="viewport" content="width=1920, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
               (function() {
                 var meta = document.querySelector('meta[name=viewport]');
-                var scale = window.innerWidth / 1024;
+                var scale = window.innerWidth / 2000;
                 if (!meta) {
                   meta = document.createElement('meta');
                   meta.name = 'viewport';
                   document.head.appendChild(meta);
                 }
-                meta.setAttribute('content', 'width=1024, initial-scale=' + scale + ', maximum-scale=' + scale + ', user-scalable=yes');
+                meta.setAttribute('content', 'width=2000, initial-scale=' + scale + ', maximum-scale=' + scale + ', user-scalable=no');
               })();
             `,
           }}

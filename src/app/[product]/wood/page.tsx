@@ -1,19 +1,56 @@
 "use client"
 import Footer from "@/components/Footer"
 import Header from "@/components/Header"
-import Slide from "@/components/Slide"
 import Image from "next/image"
+import { useRouter } from "next/navigation"
+import { useState } from "react"
 
 export default function Wood() {
+  const router = useRouter()
+  const [nextBtn, setNextBtn] = useState(false)
+  const [prevBtn, setPrevBtn] = useState(false)
   return (
     <div className="flex flex-col">
       <Header />
-      <main className="flex flex-col text-center items-center w-full px-[50px] min-w-[1024px]">
+      <main className="flex flex-col text-center items-center w-full px-[50px] min-w-[1024px] mx-auto">
         <div className="flex flex-col items-center pt-[85px] mb-[75px] border-t border-[#707070] w-full">
           <span className="text-[30px] avenir-roman ">AURALUX PREMIUM BLIND</span>
           <h2 className="text-[60px] avenir-light">WOOD BLIND</h2>
         </div>
-        <Slide />
+        <div className="relative w-full">
+          <Image src="/images/img_slide_02.png" alt="line" width={1820} height={0} className="h-auto" />
+          <button
+            className="absolute top-[50%] left-[20px] translate-y-[-50%] cursor-pointer"
+            onMouseOver={() => setPrevBtn(true)}
+            onMouseLeave={() => setPrevBtn(false)}
+            onClick={() => router.push("/product/combi")}
+          >
+            {!prevBtn ? (
+              <Image src="/images/btn_prev.png" alt="prev" width={36} height={70} />
+            ) : (
+              <Image src="/images/btn_prev_black.png" alt="prev" width={36} height={70} />
+            )}
+          </button>
+          <button
+            className="absolute top-[50%] right-[20px] translate-y-[-50%] cursor-pointer"
+            onMouseOver={() => setNextBtn(true)}
+            onMouseLeave={() => setNextBtn(false)}
+            onClick={() => router.push("/product/screen")}
+          >
+            {!nextBtn ? (
+              <Image src="/images/btn_next.png" alt="next" width={36} height={70} />
+            ) : (
+              <Image src="/images/btn_next_black.png" alt="next" width={36} height={70} />
+            )}
+          </button>
+          <div className="flex gap-[8px] items-center absolute bottom-[20px] left-[50%] translate-x-[-50%] text-[16px] font-light">
+            <span className="flex w-[18px] h-[18px] bg-transparent rounded-full border-[2px] border-[#fff]"></span>
+            <span className="flex w-[18px] h-[18px] bg-transparent rounded-full border-[2px] border-[#fff]"></span>
+            <span className="flex w-[18px] h-[18px] bg-[#fff] rounded-full"></span>
+            <span className="flex w-[18px] h-[18px] bg-transparent rounded-full border-[2px] border-[#fff]"></span>
+            <span className="flex w-[18px] h-[18px] bg-transparent rounded-full border-[2px] border-[#fff]"></span>
+          </div>
+        </div>
         <section className="flex flex-col mt-[110px] mb-[62px] ">
           <div className="flex flex-col items-center w-full gap-[50px]">
             <h3 className="text-[32px] font-bold">우드 블라인드</h3>
@@ -156,7 +193,7 @@ export default function Wood() {
           </div>
         </section>
       </main>
-      <div className="flex flex-col items-center bg-[#efeeee] w-full pb-[247px] pt-[142px]">
+      <div className="flex flex-col items-center bg-[#efeeee] w-full pb-[247px] pt-[142px] m-w-[1024px]">
         <div className="flex flex-col w-[856px] items-center mb-[70px]">
           <strong className="text-[60px] avenir-light mb-[50px]">Warranty & Quality Assurance</strong>
           <span className="text-[32px] font-bold mb-[64px]">품질보증 A/S서비스</span>
@@ -179,7 +216,7 @@ export default function Wood() {
               </span>
             </div>
           </div>
-          <div className="relative flex justify-center items-center w-[1091px] h-[1335px]  rounded-[20px] bg-[#ffffff]">
+          <div className="relative flex justify-center items-center py-[140px]  rounded-[20px] bg-[#ffffff]">
             <Image src="/images/img_warranty.png" alt="warranty_certificate" width={748} height={1057} />
             <span className="absolute top-[36px] left-[38px] text-[#abaaaa] text-[24px] font-medium">
               WARRANTY CERTIFICATE
