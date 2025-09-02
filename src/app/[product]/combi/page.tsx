@@ -1,6 +1,7 @@
 "use client"
 import Footer from "@/components/Footer"
 import Header from "@/components/Header"
+import Warranty from "@/components/Warranty"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
 import { useState } from "react"
@@ -12,7 +13,7 @@ export default function Combi() {
   return (
     <div className="flex flex-col">
       <Header />
-      <main className="flex flex-col items-center w-full px-[50px] min-w-[1024px]">
+      <main className="flex flex-col text-center items-center w-full px-[50px] mx-auto">
         <div className="flex flex-col items-center pt-[85px] mb-[75px] border-t border-[#707070] w-full">
           <span className="text-[30px] avenir-roman ">AURALUX PREMIUM BLIND</span>
           <h2 className="text-[60px] avenir-light">COMBI BLIND</h2>
@@ -83,7 +84,7 @@ export default function Combi() {
                   <span className="text-[31px] font-light text-[#919191]">01</span>
                   <strong className="text-[26px] font-bold">국내 생산</strong>
                 </div>
-                <p className="text-[24px] font-light whitespace-pre">
+                <p className="text-[24px] font-light whitespace-pre-wrap">
                   {`Auralux의 전 제품은 100% 국내 생산으로, 
 엄격한 품질 관리 아래 제작됩니다.
 높은 완성도와 안정적인 공급으로 프리미엄의
@@ -96,7 +97,7 @@ export default function Combi() {
                   <span className="text-[31px] font-light text-[#919191]">02</span>
                   <strong className="text-[26px] font-bold">프리미엄 소재</strong>
                 </div>
-                <p className="text-[24px] font-light whitespace-pre">
+                <p className="text-[24px] font-light whitespace-pre-wrap">
                   {`천연 목재로 만든 고급 우드 블라인드,  FSC등 친환경 
 인증 목재, 항균, ATB UV차단 원단을 사용하여
 품격있고 자연 친화적인 제품을 제공합니다.
@@ -109,7 +110,7 @@ export default function Combi() {
                   <span className="text-[31px] font-light text-[#919191]">03</span>
                   <strong className="text-[26px] font-bold">초저소음 모터</strong>
                 </div>
-                <p className="text-[24px] font-light whitespace-pre">
+                <p className="text-[24px] font-light whitespace-pre-wrap">
                   {`세계적인 명품 블라인드 전동 브랜드 “Somfy” 제품을 
 탑재하여 도서관 보다 조용한 27db 수준의
 정숙함을 느끼실 수 있습니다.`}
@@ -123,7 +124,7 @@ export default function Combi() {
                   <span className="text-[31px] font-light text-[#919191]">04</span>
                   <strong className="text-[26px] font-bold">맞춤 제작</strong>
                 </div>
-                <p className="text-[24px] font-light whitespace-pre">
+                <p className="text-[24px] font-light whitespace-pre-wrap">
                   {`고객의 니즈에 맞게 1mm 단위까지 제작되며, 
 색상, 패턴 등 디자인 커스터마이징도 가능합니다.`}
                 </p>
@@ -134,7 +135,7 @@ export default function Combi() {
                   <span className="text-[31px] font-light text-[#919191]">05</span>
                   <strong className="text-[26px] font-bold">전문 실측 및 시공</strong>
                 </div>
-                <p className="text-[24px] font-light whitespace-pre">
+                <p className="text-[24px] font-light whitespace-pre-wrap">
                   {`전문가 실측 후, 맞춤 제작과 숙련된 시공기술로 빈틈없는 설치를 약속합니다.`}
                 </p>
               </li>
@@ -152,7 +153,7 @@ export default function Combi() {
                   <span className="text-[31px] font-light text-[#919191]">01</span>
                   <strong className="text-[26px] font-bold">IOT 홈 연동</strong>
                 </div>
-                <p className="text-[24px] font-light whitespace-pre">
+                <p className="text-[24px] font-light whitespace-pre-wrap">
                   {`Auralux의 전 제품은 100% 국내 생산으로,\n엄격한 품질 관리 아래 제작됩니다.\n높은 완성도와 안정적인 공급으로 프리미엄의\n기준을 지켜갑니다.`}
                 </p>
               </li>
@@ -162,7 +163,7 @@ export default function Combi() {
                   <span className="text-[31px] font-light text-[#919191]">02</span>
                   <strong className="text-[26px] font-bold">리모콘 원격제어 및 스마트 폰 앱 연동</strong>
                 </div>
-                <p className="text-[24px] font-light whitespace-pre">
+                <p className="text-[24px] font-light whitespace-pre-wrap">
                   {`리모콘 한 대로 여러 개의 블라인드를 동시에 제어합니다.\n전용 앱(iOS/Android)를 통해 집안이나\n외부 어디에서나 블라인드를 제어할 수 있습니다.`}
                 </p>
               </li>
@@ -172,7 +173,7 @@ export default function Combi() {
                   <span className="text-[31px] font-light text-[#919191]">03</span>
                   <strong className="text-[26px] font-bold">자동 타이머 기능</strong>
                 </div>
-                <p className="text-[24px] font-light whitespace-pre">
+                <p className="text-[24px] font-light whitespace-pre-wrap">
                   {`스케줄을 설정하여 지정된 시간에 자동으로\n개폐되어 아침 햇살로 수면을 방해받지 않고,\n저녁 시간에는 프라이버시를 확보할 수 있습니다.`}
                 </p>
               </li>
@@ -180,37 +181,7 @@ export default function Combi() {
           </div>
         </section>
       </main>
-      <div className="flex flex-col items-center bg-[#efeeee] w-full pb-[247px] pt-[142px] m-w-[1024px]">
-        <div className="flex flex-col w-[856px] items-center mb-[70px]">
-          <strong className="text-[60px] avenir-light mb-[50px]">Warranty & Quality Assurance</strong>
-          <span className="text-[32px] font-bold mb-[64px]">품질보증 A/S서비스</span>
-          <p className="text-[24px] font-light text-center whitespace-pre">
-            {`Auralux는 품질과 내구성에 대한 자신감으로 업계 최고 수준의 보증을 약속합니다.\n모든 제품은 평생 제한 무상 보증, 전동 블라인드의 핵심 부품인 모터는 5년 보증을 제공합니다.\n이는 뛰어난 품질과 고객에 대한 책임을 증명하는\nAuralux의 신뢰의 표현입니다.`}
-          </p>
-        </div>
-        <div className="flex flex-col gap-[16px]">
-          <div className="flex gap-[16px]">
-            <div className="relative flex justify-center items-center text-center w-[537px] h-[363px] text-[34px] font-light rounded-[20px] bg-[#ffffff] whitespace-pre">
-              {`모든 제품\n평생 제한 무상 보증`}
-              <span className="absolute top-[36px] left-[38px] text-[#abaaaa] text-[24px] font-medium">
-                WARRANTY. 1
-              </span>
-            </div>
-            <div className="relative flex justify-center items-center text-center w-[537px] h-[363px] text-[34px] font-light rounded-[20px] bg-[#ffffff] whitespace-pre ">
-              {`전동 블라인드 모터\n5년 무상 보증`}
-              <span className="absolute top-[36px] left-[38px] text-[#abaaaa] text-[24px] font-medium">
-                WARRANTY. 2
-              </span>
-            </div>
-          </div>
-          <div className="relative flex justify-center items-center py-[140px]  rounded-[20px] bg-[#ffffff]">
-            <Image src="/images/img_warranty.png" alt="warranty_certificate" width={748} height={1057} />
-            <span className="absolute top-[36px] left-[38px] text-[#abaaaa] text-[24px] font-medium">
-              WARRANTY CERTIFICATE
-            </span>
-          </div>
-        </div>
-      </div>
+      <Warranty />
       <Footer />
     </div>
   )

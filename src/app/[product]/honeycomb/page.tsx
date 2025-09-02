@@ -1,6 +1,7 @@
 "use client"
 import Footer from "@/components/Footer"
 import Header from "@/components/Header"
+import Warranty from "@/components/Warranty"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
 import { useState } from "react"
@@ -12,7 +13,7 @@ export default function Honeycomb() {
   return (
     <div className="flex flex-col">
       <Header />
-      <main className="flex flex-col items-center w-full px-[50px] min-w-[1024px]">
+      <main className="flex flex-col text-center items-center w-full px-[50px]  mx-auto">
         <div className="flex flex-col items-center pt-[85px] mb-[75px] border-t border-[#707070] w-full">
           <span className="text-[30px] avenir-roman ">AURALUX PREMIUM BLIND</span>
           <h2 className="text-[60px] avenir-light">HONEYCOMB BLIND</h2>
@@ -190,37 +191,7 @@ export default function Honeycomb() {
           </div>
         </section>
       </main>
-      <div className="flex flex-col items-center bg-[#efeeee] w-full pb-[247px] pt-[142px]  m-w-[1024px]">
-        <div className="flex flex-col w-[856px] items-center mb-[70px]">
-          <strong className="text-[60px] avenir-light mb-[50px]">Warranty & Quality Assurance</strong>
-          <span className="text-[32px] font-bold mb-[64px]">품질보증 A/S서비스</span>
-          <p className="text-[24px] font-light text-center whitespace-pre">
-            {`Auralux는 품질과 내구성에 대한 자신감으로 업계 최고 수준의 보증을 약속합니다.\n모든 제품은 평생 제한 무상 보증, 전동 블라인드의 핵심 부품인 모터는 5년 보증을 제공합니다.\n이는 뛰어난 품질과 고객에 대한 책임을 증명하는\nAuralux의 신뢰의 표현입니다.`}
-          </p>
-        </div>
-        <div className="flex flex-col gap-[16px]">
-          <div className="flex gap-[16px]">
-            <div className="relative flex justify-center items-center text-center w-[537px] h-[363px] text-[34px] font-light rounded-[20px] bg-[#ffffff] whitespace-pre">
-              {`모든 제품\n평생 제한 무상 보증`}
-              <span className="absolute top-[36px] left-[38px] text-[#abaaaa] text-[24px] font-medium">
-                WARRANTY. 1
-              </span>
-            </div>
-            <div className="relative flex justify-center items-center text-center w-[537px] h-[363px] text-[34px] font-light rounded-[20px] bg-[#ffffff] whitespace-pre ">
-              {`전동 블라인드 모터\n5년 무상 보증`}
-              <span className="absolute top-[36px] left-[38px] text-[#abaaaa] text-[24px] font-medium">
-                WARRANTY. 2
-              </span>
-            </div>
-          </div>
-          <div className="relative flex justify-center items-center py-[140px]  rounded-[20px] bg-[#ffffff]">
-            <Image src="/images/img_warranty.png" alt="warranty_certificate" width={748} height={1057} />
-            <span className="absolute top-[36px] left-[38px] text-[#abaaaa] text-[24px] font-medium">
-              WARRANTY CERTIFICATE
-            </span>
-          </div>
-        </div>
-      </div>
+      <Warranty />
       <Footer />
     </div>
   )

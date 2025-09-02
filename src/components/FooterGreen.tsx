@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const FooterGreen = () => {
   return (
-    <footer className="flex w-full h-[235px] border-t border-[#888] px-[50px] pt-[45px] bg-[#3f3b32] text-white">
+    <footer className="flex w-full  h-[235px] border-t border-[#888] px-[50px] pt-[45px] bg-[#3f3b32] text-white">
       <div className="mr-[90px]">
         <Image src="/images/img_logo_white.png" alt="logo_gray" width={203} height={70} />
       </div>

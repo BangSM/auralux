@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="flex flex-col">
       <Header />
-      <main className="flex flex-col items-center w-full px-[50px] min-w-[1024px]">
+      <main className="flex flex-col items-center w-full px-[50px] ">
         <section className="flex items-center gap-[120px] w-full about-top border-t border-b border-[#b4b4b4]">
           <div className="flex pt-[80px] pb-[70px] w-[577px]">
             <Image src="/images/img_about_1.png" alt="product" width={577} height={576} />

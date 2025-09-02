@@ -52,11 +52,9 @@
 }
 
 body {
-  max-width: 1920px;
+  width: 1920px;
   margin: 0 auto;
-  font-family: Pretendard, Arial, Helvetica, sans-serif;
-  transform: scale(calc(100vw / 1920));
-  transform-origin: top left;
+  font-family: Avenir, Pretendard, Arial, Helvetica, sans-serif;
 }
 
 main {

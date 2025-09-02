@@ -5,9 +5,9 @@ import Link from "next/link"
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col w-[1920px]">
       <Header />
-      <main className="flex flex-col items-center w-full px-[50px] min-w-[1024px]">
+      <main className="flex flex-col items-center w-full px-[50px]">
         <section className="flex">
           <Image src="/images/img_main_header.png" alt="line" width={1905} height={1270} />
         </section>
