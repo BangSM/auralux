@@ -21,10 +21,12 @@ export default function RootLayout({
   return (
     <>
       <head>
-        <meta name="viewport" content="initial-scale=1.0, maximum-scale=0.7, user-scalable=no" />
+        <meta name="viewport" content="width=1440, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       </head>
       <html lang="en">
-        <body>{children}</body>
+        <body className="w-[1440px]">
+          <div>{children}</div>
+        </body>
       </html>
     </>
   )

@@ -25,7 +25,7 @@ const Header = () => {
   }, [isProduct])
 
   return (
-    <nav className="flex sticky top-0 h-[140px] w-full justify-center bg-white px-[50px]  pt-[50px] z-9999">
+    <nav className="flex sticky top-0 h-[140px] max-w-[1440px] w-full justify-center bg-white pt-[50px] z-9999">
       <div className="flex w-full justify-between items-start ">
         <button className="flex items-center gap-[10px] cursor-pointer" onClick={() => router.push("/")}>
           <Image src="/images/img_logo.png" alt="logo" width={134} height={36} className="h-auto" />

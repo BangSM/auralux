@@ -7,15 +7,15 @@ const About = () => {
     <div className="flex flex-col">
       <Header />
       <main className="flex flex-col items-center w-full px-[50px] ">
-        <section className="flex items-center gap-[120px] w-full about-top border-t border-b border-[#b4b4b4]">
-          <div className="flex h-auto pt-[80px] pb-[70px] w-[577px]">
-            <Image src="/images/img_about_1.png" alt="product" width={577} height={0} objectFit="cover" />
+        <section className="flex h-full items-center gap-[120px] pt-[80px] pb-[70px] w-full border-t border-b border-[#b4b4b4]">
+          <div className="flex h-[542px]  w-[542px] shrink-0">
+            <Image src="/images/img_about_1.png" alt="product" width={542} height={542} objectFit="cover" />
           </div>
-          <div className="flex flex-col gap-[75px] section-3-info w-[893px]">
+          <div className="flex flex-col h-[100%] justify-stretch w-[893px] gap-[120px]">
             <strong className="text-[26px] avenir-black">HERITAGE AURALUX</strong>
             <div className="flex flex-col gap-[40px]">
               <strong className="text-[47px]">공간에 빛의 아우라를 입히는 오라럭스</strong>
-              <p className="text-[26px] w-[885px] whitespace-pre">
+              <p className="text-[26px] w-[885px] whitespace-pre-wrap">
                 {`Auralux는 42년 역사의 인테리어 전문 기업 “Sandol Housing”의\n1세대 경영자로부터 오랜 노하우와 전문성을 이어 받아 새롭게 시작된 브랜드입니다.\n이러한 기반 위에서 탄생한 Auralux는 시간이 지나도 변치 않는 가치와 장인 정신을\n고스란히 담고 있으며, 현재는 2세대 경영진이 그 유산을 이어받아\n정교하면서도 감성적인 프리미엄 스마트 블라인드 브랜드로 성장시키고 있습니다.\n축적된 경험과 혁신의 조화를 통해 Auralux는 ‘시간이 쌓아 올린 품격있는 공간’을\n만드는 브랜드로서, 고객의 일상에 새로운 가치를 더하고 있습니다.`}
               </p>
             </div>
