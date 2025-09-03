@@ -69,7 +69,9 @@ export default function Screen() {
             <Image src="/images/img_screen_1.png" alt="balcony_1" width={642} height={547} />
             <Image src="/images/img_screen_2.png" alt="office_2" width={1158} height={547} />
           </div>
-          <span className="flex justify-center text-[154px] font-light text-[#e0e0e0]">ROLLER & SUN SCREEMS</span>
+          <span className="flex justify-center text-[154px] font-light text-[#e0e0e0] tracking-[-0.01em]">
+            ROLLER & SUN SCREEMS
+          </span>
         </section>
         <section className="flex flex-col items-center mb-[170px]">
           <div className="flex flex-col items-center gap-[20px] mb-[128px]">
