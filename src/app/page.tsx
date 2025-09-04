@@ -20,8 +20,8 @@ export default function Home() {
         <section className="flex flex-col items-center mt-[88px] gap-[32px] mb-[176px]">
           <h3 className="text-[29px] tracking-[0.01em] avenir-black">AURALUX PRODUCT</h3>
           <div className="flex flex-col items-center">
-            <ul className="flex gap-[9px] product-list ">
-              <li className="flex flex-col items-center gap-[18px] w-[1/4]">
+            <ul className="flex gap-[8px]">
+              <li className="flex flex-col items-center gap-[15px] w-[1/4]">
                 <Image src="/images/img_honeycomb.png" alt="honeycomb" width={687} height={0} />
                 <Link
                   href="/product/honeycomb"
@@ -32,7 +32,7 @@ export default function Home() {
                   </span>
                 </Link>
               </li>
-              <li className="flex flex-col items-center gap-[18px] w-[1/4]">
+              <li className="flex flex-col items-center gap-[15px] w-[1/4]">
                 <Image src="/images/img_comb.png" alt="comb" width={687} height={0} />
                 <Link
                   href="/product/combi"
@@ -43,7 +43,7 @@ export default function Home() {
                   </span>
                 </Link>
               </li>
-              <li className="flex flex-col items-center gap-[18px] w-[1/4]">
+              <li className="flex flex-col items-center gap-[15px] w-[1/4]">
                 <Image src="/images/img_wood.png" alt="wood" width={687} height={0} />
                 <Link
                   href="/product/wood"
@@ -54,7 +54,7 @@ export default function Home() {
                   </span>
                 </Link>
               </li>
-              <li className="flex flex-col items-center gap-[18px] w-[1/4]">
+              <li className="flex flex-col items-center gap-[15px] w-[1/4]">
                 <Image src="/images/img_screen.png" alt="screen" width={687} height={0} />
                 <Link
                   href="/product/screen"
