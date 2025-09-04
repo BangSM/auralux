@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import "./globals.css"
+import ScaleWrapper from "@/components/ScaleWrapper"
 
 export const metadata: Metadata = {
   title: "Auralux",
@@ -21,11 +22,11 @@ export default function RootLayout({
   return (
     <>
       <head>
-        <meta name="viewport" content="width=1440, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       </head>
       <html lang="en">
         <body className="w-[1440px]">
-          <div>{children}</div>
+          <ScaleWrapper>{children}</ScaleWrapper>
         </body>
       </html>
     </>
