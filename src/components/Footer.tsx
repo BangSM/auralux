@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const Footer = () => {
   return (
-    <footer className="flex h-[235px] pt-[34px] ">
+    <footer className="flex h-[170px] pt-[33px] px-[55px] border-t border-[#888] ">
       <div className="ml-[10px] mr-[74px]">
         <Image src="/images/img_logo_gray.png" alt="logo_gray" width={160} height={54} />
       </div>
