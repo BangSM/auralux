@@ -24,36 +24,36 @@ const About = () => {
           </div>
         </section>
         <section className="flex justify-end  w-full section-3 mb-[198px] px-[75px] mt-[-10px]">
-          <Image src="/images/img_about_2.png" alt="product" width={581} height={381} />
+          <Image src="/images/img_about_02.png" alt="product" width={900} height={381} />
         </section>
         <section className="relative flex gap-[24px] mb-[111px] overflow-hidden justify-center h-full w-full bg-white">
           <Image src="/images/img_total.png" alt="product" width={1382} height={756} objectFit="contain" />
         </section>
       </main>
       <div className="flex flex-col items-center w-full">
-        <section className="relative flex flex-col  m-w-[1240px] items-center gap-[100px] w-[100%] overflow-x-auto about-bg">
+        <section className="relative flex flex-col  m-w-[1240px] items-center gap-[100px] w-[100%] about-bg">
           <div className="w-full max-w-[1440px]">
             <Image
               src="/images/img_about_bg.png"
               alt="product"
-              width={1920}
-              height={2093}
+              width={1479}
+              height={2217}
               className="w-full"
               objectFit="contain"
             />
           </div>
-          <div className="flex items-center justify-center w-[249px] h-[43px] rounded-[20px] absolute top-[32px] left-[30px] bg-white text-[19px] tracking-normal  avenir-black">
+          <div className="flex items-center justify-center w-[184px] h-[32px] rounded-[20px] absolute top-[32px] left-[30px] bg-white text-[19px] tracking-[-0.01em]  avenir-black">
             CORE VALUES
           </div>
-          <ul className="flex gap-[23px] absolute top-[110px] px-[30px] ">
+          <ul className="flex gap-[23px] absolute top-[110px] px-[30px] w-full">
             <li className="flex flex-col justify-between bg-[#fff] core-list  opacity-[0.52] h-[290px] px-[20px] py-[26px] rounded-[21px] w-[25%] ">
               <div className="text-[27px] tracking-[0.01em] avenir-black text-[#000]">HIGH QUALITY</div>
               <div className="flex flex-col gap-[19px]">
                 <strong className="text-[20px] tracking-[0.01em] leading-[auto] avenir-black text-[#000]">
                   최고의 품질
                 </strong>
-                <p className="text-[16px] font-medium text-[#000] tracking-[0.01em] leading-[23px] whitespace-pre-line wrap-break-word">
-                  {`오라럭스는 제품 하나하나에 엄격한 품질 기준을 적용하여, 오랜 시간 사용해도 변함없는 내구성과 신뢰를 제공합니다.`}
+                <p className="text-[16px] font-medium text-[#000] tracking-[0.01em] leading-[23px] whitespace-pre-wrap wrap-break-word">
+                  {`오라럭스는 제품 하나하나에 엄격한\n품질 기준을 적용하여, 오랜 시간 사용해도\n변함없는 내구성과 신뢰를 제공합니다.`}
                 </p>
               </div>
             </li>
@@ -64,7 +64,7 @@ const About = () => {
                   최고의 부품
                 </strong>
                 <p className="text-[16px] font-medium text-[#000] tracking-[0.01em] leading-[23px] whitespace-pre-line wrap-break-word">
-                  {`세계적으로 검증된 고성능 모터와 정밀한 부품만을 사용해, 부드럽고 조용한 작동과 안정적인 제어를 실현합니다.`}
+                  {`세계적으로 검증된 고성능 모터와 정밀한\n부품만을 사용해, 부드럽고 조용한 작동과\n안정적인 제어를 실현합니다.`}
                 </p>
               </div>
             </li>
@@ -75,7 +75,7 @@ const About = () => {
                   최고의 디자인
                 </strong>
                 <p className="text-[16px] font-medium text-[#000] tracking-[0.01em] leading-[23px] whitespace-pre-line wrap-break-word">
-                  {`모던하고 감각적인 디자인으로 어떤 공간에도 자연스럽게 어우러지며, 공간의 품격을 한층 더 높여줍니다.`}
+                  {`모던하고 감각적인 디자인으로 어떤 공간에도\n자연스럽게 어우러지며,\n공간의 품격을 한층 더 높여줍니다.`}
                 </p>
               </div>
             </li>
@@ -86,7 +86,7 @@ const About = () => {
                   최고의 서비스
                 </strong>
                 <p className="text-[16px] font-medium text-[#000] tracking-[0.01em] leading-[23px] whitespace-pre-line wrap-break-word">
-                  {`설치부터 사후관리까지, 고객의 라이프스타일에 맞춤형 서비스를 제공하여 완벽한 만족을 약속합니다.`}
+                  {`설치부터 사후관리까지, 고객의\n라이프스타일에 맞춤형 서비스를 제공하여\n완벽한 만족을 약속합니다.`}
                 </p>
               </div>
             </li>
