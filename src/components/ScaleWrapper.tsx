@@ -1,10 +1,11 @@
 "use client"
 
+import { useRouter } from "next/router"
 import { useEffect, useRef } from "react"
 
 export default function ScaleWrapper({ children }: { children: React.ReactNode }) {
   const wrapperRef = useRef<HTMLDivElement>(null)
-
+  const router = useRouter()
   useEffect(() => {
     const baseWidth = 1440
 
@@ -31,7 +32,7 @@ export default function ScaleWrapper({ children }: { children: React.ReactNode }
     adjustScale()
 
     return () => window.removeEventListener("resize", adjustScale)
-  }, [])
+  }, [router])
 
   return (
     <div
