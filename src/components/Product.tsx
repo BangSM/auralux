@@ -85,13 +85,15 @@ export default function Product({ product }: { product: keyof typeof PRODUCT_DAT
   const [prevBtn, setPrevBtn] = useState(false)
   return (
     <div className="flex flex-col">
-      <Header />
-      <main className="flex flex-col text-center items-center w-full  mx-auto min-w-[1440px]">
+      <div className="product-header">
+        <Header />
+      </div>
+      <main className="flex flex-col text-center items-center w-full mx-auto min-w-[1440px] px-[30px]">
         <div className="flex flex-col items-center pt-[85px] mb-[65px] border-t border-[#707070] w-full">
           <span className="text-[24px] avenir-roman ">AURALUX PREMIUM BLIND</span>
           <h2 className="text-[48px] avenir-light">{PRODUCT_DATA[product].title}</h2>
         </div>
-        <div className="relative w-full">
+        <div className="relative w-full ">
           <Image src={PRODUCT_DATA[product].image_1} alt="line" width={1820} height={0} className="h-auto" />
           <button
             className="absolute top-[50%] left-[20px] translate-y-[-50%] cursor-pointer"
@@ -140,7 +142,7 @@ export default function Product({ product }: { product: keyof typeof PRODUCT_DAT
         </section>
         <div className="h-[170px] w-[1px] bg-[#a7a7a7] mb-[70px]"></div>
         <section className="flex flex-col items-center border-b border-[#707070] mb-[160px] max-w-[1440px] w-full ">
-          <div className="flex gap-5 mb-[82px]">
+          <div className="flex gap-5 mb-[82px] ">
             <Image src={PRODUCT_DATA[product].image_2} alt="balcony_1" width={507} height={432} />
             <Image src={PRODUCT_DATA[product].image_3} alt="office_2" width={915} height={432} />
           </div>
@@ -237,6 +239,7 @@ export default function Product({ product }: { product: keyof typeof PRODUCT_DAT
                 autoPlay
                 muted
                 loop
+                controls
                 playsInline
                 webkit-playsinline="true"
                 className="w-auto h-full object-cover mx-auto"

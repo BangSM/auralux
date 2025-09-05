@@ -7,10 +7,12 @@ const Contact = () => {
     <div className="flex flex-col">
       <Header />
       <main className="flex flex-col">
-        <h2 className="text-[55px] w-full leading-[auto] tracking-[0.01em] avenir-light px-[50px] pt-[39px] pb-[67px] border-t border-b border-[#707070] ">
-          CONTACT. US
+        <h2 className="w-full leading-[auto] tracking-[0.01em] avenir-light px-[30px]   ">
+          <div className="text-[55px] w-full leading-[auto] tracking-[0.01em] border-t border-b pt-[39px] pb-[67px] border-[#707070]">
+            CONTACT. US
+          </div>
         </h2>
-        <section className="flex flex-col gap-[16px] px-[45px] pt-[48px] mb-[80px]">
+        <section className="flex flex-col gap-[16px] px-[30px] pt-[48px] mb-[80px]">
           <div className="flex gap-[46px]">
             <span className="w-[120px] text-[20px] leading-[32px] tracking-[0.01em] font-semibold">E-MAIL</span>
             <p className="text-[20px] leading-[32px] tracking-[0.01em] font-normal">auralux@space-27.com</p>
